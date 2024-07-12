@@ -1,118 +1,73 @@
-# Hyde
+# Open Grants List
 
-Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+The Open Grants List is a list of grants that are openly available on the web.
+These grants can help with learning grantsmanship, understanding particular funders and their programs, and communicating research and scholarship.
 
-![Hyde screenshot](https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png)
+The main website is <https://www.ogrants.org/>.
 
+This is the Jekyll repository that creates the site.
 
-## Contents
+## Adding a grant
 
-- [Usage](#usage)
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Sticky sidebar content](#sticky-sidebar-content)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
+Adding a grant to the list requires two (or three) things:
 
+### 1. Post the grant online
 
-## Usage
+This site doesn't host grants, it just provides links to them.
+We recommend [Zenodo](https://zenodo.org/) and [Figshare](https://figshare.com/) as good options for posting grants because they are archival and so shouldn't result in broken links anytime in the near future.
 
-Hyde is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
+### 2. Add information about the grant
 
+Information for each grant is stored as YAML with fields for each key piece of information.
+E.g.,
 
-## Options
-
-Hyde includes some customizable options, typically applied via classes on the `<body>` element.
-
-
-### Sidebar menu
-
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
-
-```
+```markdown
 ---
-layout: page
-title: About
+layout: grant
+title: Moore Investigator in Data Driven Discovery
+author: Ethan P. White
+ORCID: 0000-0001-6728-7745
+year: 2014
+link: https://doi.org/10.6084/m9.figshare.1189330
+funder: Moore Foundation
+program: Data Driven Discovery Investigators
+discipline: data science
+status: funded
 ---
 ```
 
-**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
+The items to the right of the `:` on each line should be changed to match the grant you want to add.
+To get this added to the site there are three options:
 
+1. Submit a pull request that adds the above information to a file named `lastname_firstname_year.md` in the `_grants` folder of the [GitHub repository]({{ site.github.repo }}).
+  The `lastname` and `firstname` should be those for the lead PI.
+  In the case of multiple grants by the same PI for the same year append letters in order to the date, e.g., `white_ethan_2026a.md`.
+2. [Open an issue](https://github.com/ogrants/ogrants/issues/new) and paste the filled out YAML into that issue.
+3. [Email us](mailto:ogrants@googlegroups.com) the information.
 
-### Sticky sidebar content
+### 3. Add information about the author
 
-By default Hyde ships with a sidebar that affixes it's content to the bottom of the sidebar. You can optionally disable this by removing the `.sidebar-sticky` class from the sidebar's `.container`. Sidebar content will then normally flow from top to bottom.
+If you want you can also add information about the author in the form:
 
-```html
-<!-- Default sidebar -->
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    ...
-  </div>
-</div>
-
-<!-- Modified sidebar -->
-<div class="sidebar">
-  <div class="container">
-    ...
-  </div>
-</div>
+```markdown
+---
+name: Ethan P. White
+ORCID: 0000-0001-6728-7745
+institution: University of Florida
+website: http://ethanwhite.org
+twitter: ethanwhite
+---
 ```
 
+This can be submitted along with the grant information if you're using an issue or email.
+If you're submitting a pull request it should be placed in a file named `lastname_firstname.md` in the `_authors` directory.
 
-### Themes
+## Acknowledgments
 
-Hyde ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
+Development of this site has received support from the following sources:
 
-![Hyde in red](https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png)
+1. [Gordon and Betty Moore Foundation](https://www.moore.org/)'s [Data-Driven Discovery Initiation](https://www.moore.org/initiative-strategy-detail?initiativeId=data-driven-discovery) through [Grant GBMF4563](https://www.moore.org/grant-detail?grantId=GBMF4563) to Ethan White.
 
-There are eight themes available at this time.
+2. [Institute of Museum and Library Services](https://www.imls.gov/)'s [National Leadership Grants for Libraries](https://www.imls.gov/grants/available/national-leadership-grants-libraries) through [Award # LG-250067-OLS-21](https://www.imls.gov/grants/awarded/lg-250067-ols-21) to Hao Ye and Perry Collins.
 
-![Hyde theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
-
-To use a theme, add anyone of the available theme classes to the `<body>` element in the `default.html` layout, like so:
-
-```html
-<body class="theme-base-08">
-  ...
-</body>
-```
-
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/hyde/blob/master/public/css/hyde.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
-
-### Reverse layout
-
-![Hyde with reverse layout](https://f.cloud.github.com/assets/98681/1831230/42b0d3ac-7384-11e3-8d54-2065afd03f9e.png)
-
-Hyde's page orientation can be reversed with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
-
-
-## Development
-
-Hyde has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
-
-## License
-
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+3. [University of FLorida Library Technology Services](https://lts.uflib.ufl.edu/). 

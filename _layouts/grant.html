@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="grant">
+    <h3 class="page-title">{{ page.title }}</h3>
+  <dl>
+      <dt>Author</dt>
+      {% if page.ORCID %}
+        <dd>{{ page.author }} (<a href="https://orcid.org/{{ page.ORCID }}">ORCID</a>)</dd>
+      {% else %}
+        <dd>{{ page.author }}</dd>
+      {% endif %}
+  
+      <dt>Year</dt>
+      <dd>{{ page.year }}</dd>
+  
+      <dt>Funding Source</dt>
+      {% if page.program %}
+        <dd>{{ page.funder }} {% if page.program and page.program != '' %}({{ page.program }}){% endif %}</dd>
+      {% else %}
+        <dd>{{ page.funder }}</dd>
+      {% endif %}
+
+      <dt>Funded</dt>
+      {% if page.status == 'funded' or page.status == 'partially funded' %}
+        <dd>Yes</dd>
+	    {% elsif page.status == 'unfunded' or page.status == 'not funded' %}
+        <dd>No</dd>
+      {% else %}
+        <dd>{{page.status}}</dd>
+      {% endif %}
+
+      <dt>Grant Documents</dt>
+      {% for link in page.link %}
+        {% if page.link_name %}
+          <dd><a href="{{ link }}">{{ page.link_name[forloop.index0] }}</a></dd>
+        {% elsif forloop.length == 1 %}
+          <dd><a href="{{ link }}">Proposal</a></dd>
+        {% else %}
+          <dd><a href="{{ link }}">Document {{ forloop.index }}</a></dd>
+        {% endif %}
+      {% endfor %}
+
+  </dl>
+</div>
