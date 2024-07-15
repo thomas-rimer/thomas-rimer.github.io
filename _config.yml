@@ -15,9 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://thomasrimer.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username:  thomas-rimer
 
 # Build settings
 markdown: kramdown
@@ -35,7 +35,7 @@ collections:
 
 # Site information
 
-title:            'Open Grants'
-url:              https://ogrants.org
+title:            'Thomas Rimer'
+url:              https://thomasrimer.com
 github:
-  repo:           https://github.com/ogrants/ogrants
+  repo:           https://github.com/thomas-rimer/thomasrimer.github.io
