@@ -1,9 +1,3 @@
-title: "Thomas Rimer's Portfolio"
-description: ""
+title: "Thomas Rimer"
+description: "Personal Portfolio"
 theme: jekyll-theme-minimal
-
-header_pages:
-  - index.md
-  - projects.md
-  - trips.md
-  
