@@ -1,3 +1,9 @@
-title: "My Portfolio"
-description: "Welcome to my personal website"
+title: "Thomas Rimer's Portfolio"
+description: ""
 theme: jekyll-theme-minimal
+
+header_pages:
+  - index.md
+  - projects.md
+  - trips.md
+  
