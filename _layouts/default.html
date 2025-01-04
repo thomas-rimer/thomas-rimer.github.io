@@ -41,7 +41,11 @@
       </header>
       <section>
 
-      {{ content }}
+      {% include sidebar.html %}
+
+      <div class="content-area">
+        {{ content }}
+      </div>
 
       </section>
       <footer>
