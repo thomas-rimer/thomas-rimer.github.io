@@ -8,7 +8,7 @@ rank: 1
 
 | Big Projects    |  |
 | -------- | ------- |
-| [Parachute Guidance System "BLiMS"](./projects/blims/blims.html) | Mar '24 - Jun '25 |
+| [Parachute Guidance System "BLiMS"](blims/blims.html) | Mar '24 - Jun '25 |
 | Air Sampling Rocket Payload | May '24 - Jun '25 |
 | Femtogram Metal Contaminant Detection with Vapor Phase Decomposition | May - Aug '24 |
 | Smart Camera Netowrk for Nanofab Automation| May - Aug '24 |
