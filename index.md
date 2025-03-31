@@ -3,6 +3,4 @@ layout: default
 title: "Home"
 ---
 
-# Hi, I'm Thomas Rimer 👋
-
-Welcome to my website. I have past projects, trip reports, and evergreen resources. Email me if you have any questions!
+I'm a sophmore at Cornell University studying [applied engineering physics](https://www.aep.cornell.edu/aep). Outside of class I build mechatronic systems for the Cornell Rocketry team. I love nanofabrication.

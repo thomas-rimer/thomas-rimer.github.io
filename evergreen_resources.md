@@ -6,8 +6,8 @@ rank: 3
 
 # Evergreen Resources
 
-|  |  |
+| Doc | Last Updated |
 | -------- | ------- |
-| Updating this website  |  |
-| Stepper Motors |  |
-| Git |  |
+| Maintaining this website  | Jan '25 |
+| Stepper Motors | Jan '25 |
+| Git | Jan '25 |
