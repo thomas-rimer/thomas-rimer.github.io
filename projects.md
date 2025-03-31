@@ -8,13 +8,18 @@ rank: 1
 
 | Big Projects    |  |
 | -------- | ------- |
-| [Parachute Guidance System "BLiMS"](./projects/blims.md) | Mar '24 - Jun '25 |
-| [Air Sampling Rocket Payload](./projects/air_sample_payload.md) | May '24 - Jun '25 |
-| Ultratrace Contaminant Detection with Vapor Phase Decomposition | May - Aug '24 |
+| [Parachute Guidance System "BLiMS"](./projects/blims/blims.html) | Mar '24 - Jun '25 |
+| Air Sampling Rocket Payload | May '24 - Jun '25 |
+| Femtogram Metal Contaminant Detection with Vapor Phase Decomposition | May - Aug '24 |
 | Smart Camera Netowrk for Nanofab Automation| May - Aug '24 |
+| Laser Light Scattering Caused by Fat Globules in Milk | August '22 - February '23 |
 | Custom Bioreactor Heating Systems | June - Sep '22 |
+| Jet Electrochemical Mill for DIY Microfluidics | '21' |
+
 
 
 | Small Projects    |  |
 | -------- | ------- |
-| Building this website  | Jan '25 |
+| Characterizing Laser Speckle | Spring '25 |
+| Rocket Antenna Tracking System (RATS) | November '24 |
+| Stacking Graphene/BN | June '23 |

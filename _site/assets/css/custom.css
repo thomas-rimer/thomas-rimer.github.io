@@ -1,0 +1,22 @@
+.center-figure {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.center-figure img {
+    max-width: 50%;
+    height: auto;
+}
+
+.center-video {
+    text-align: center;
+    margin: 0 auto;
+}
+  
+.center-video video {
+    max-width: 50%;
+    height: auto;
+    display: inline-block;
+}

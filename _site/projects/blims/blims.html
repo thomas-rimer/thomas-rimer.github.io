@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>BLiMS | Thomas Rimer</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="BLiMS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Personal Portfolio" />
+<meta property="og:description" content="Personal Portfolio" />
+<link rel="canonical" href="http://localhost:4000/projects/blims/blims.html" />
+<meta property="og:url" content="http://localhost:4000/projects/blims/blims.html" />
+<meta property="og:site_name" content="Thomas Rimer" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="BLiMS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Personal Portfolio","headline":"BLiMS","url":"http://localhost:4000/projects/blims/blims.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">Thomas Rimer</a></h1>
+
+        
+
+        <!-- <p>Personal Portfolio</p> -->
+
+        <!--  -->
+
+        <!--  -->
+
+        
+        
+        
+          
+        
+          
+        
+          
+            <li>
+              <a href="projects.html">Projects</a>
+              <!-- <span> [ projects.md - Projects - 1 ] </span> -->
+            </li>
+          
+        
+          
+            <li>
+              <a href="trip_reports.html">Trip Reports</a>
+              <!-- <span> [ trip_reports.md - Trip Reports - 2 ] </span> -->
+            </li>
+          
+        
+          
+            <li>
+              <a href="evergreen_resources.html">Evergreen Resources</a>
+              <!-- <span> [ evergreen_resources.md - Evergreen Resources - 3 ] </span> -->
+            </li>
+          
+        
+      </header>
+      <section>
+
+      <h1 id="blims-brake-line-manipulation-system">BLiMS (Brake Line Manipulation System)</h1>
+
+<figure class="center-figure">
+    <img src="blims_1.png" alt="Blims main rendering" />
+    <figcaption></figcaption>
+</figure>
+
+<p>BLiMS, the <strong>B</strong>rake <strong>Li</strong>ne <strong>M</strong>anipulation <strong>S</strong>ystem, is a parachute guidance system developed for the Cornell Rocketry Team’s 2025 rocket. By pulling on the brakelines of a square parafoil, BLiMS navigates the team’s 19 foot long, 150 lb rocket to a GPS waypoint as it a descends from a 10,000’ apogee.</p>
+
+<h2 id="system-overview">System Overview</h2>
+
+<p><em>A detailed, 50-page technical report is availible at the bottom of this page going into every aspect of the design and validation of BLiMS. I recommend checking that out for further insight into the project.</em></p>
+
+<p>BLiMS is basically a miniature skydiver. Onboard, it has a single high-power BLDC motor connected to a pair of counter-rotating spools to extend and retract the brakelines of our rocket’s square parafoil. When the brakelines are pulled, the shape of parafoil changes allowing for left and right turns. An onboard PID controller uses GPS and altimiter data to guide the rocket to a predetermined landing point. Given the weight of the rocket and extreme deceleration during parachute inflation, BLiMS was deisgned to withstand <strong>&gt;4,500 lbs</strong> of loading while still retaining complete control over the parachute.</p>
+
+<p>I designed the entire mechanical system, as well as simuluated and selected the motors, motor drivers, and battery systems. Other members of CRT wrote the firmware, controller, and machined the actual components.</p>
+
+<p>BLiMS was designed in the spring and summer of 2024. It was revised that fall, after which it was manufactured and assembled. It flew succesfully for the first time in January 2025. A second validation flight was launched in March of 2025, after which it was handed over to the software team for guidance control. Its official (and final) flight took place at IREC 2025 in Texas, where it succesfully returned our rocket to the designated landing point. Photos and videos of BLiMS working are below.</p>
+
+<h2 id="mechanical">Mechanical</h2>
+
+<p>BLiMS uses the following components:</p>
+<ul>
+  <li>Motor: ODrive D6374 150KV BLDC</li>
+  <li>Motor Driver: ODrive Pro</li>
+  <li>Motor Encoder: 16384 CPR Absolute RS485 Encoder (AMT212B-V-OD)</li>
+  <li>Batteries: 9x 18650 Molicel P28A Li-Ion Cells</li>
+  <li>Gearing: 10:1 Worm Gear and Worm</li>
+</ul>
+
+<p>Detailed descriptions for how the system works are availible in the Technical Report at the end. The system were designed in CAD (Fusion360 and Solidworks), simulated and verified with Ansys, manufactured on a mix of manual and CNC mills, and tested on several high powered sounding rockets.</p>
+
+<h2 id="photos-of-system">Photos of System</h2>
+
+<figure class="center-figure">
+    <img src="blims_2.png" alt="" />
+    <figcaption>Photo of the assembled BLiMS</figcaption>
+</figure>
+
+<figure class="center-figure">
+    <img src="blims_3.png" alt="" />
+    <figcaption>CAD cross section of BLiMS</figcaption>
+</figure>
+
+<figure class="center-figure">
+    <img src="blims_3.2.png" alt="" />
+    <figcaption>Custom python simulation of BLDC motor</figcaption>
+</figure>
+
+<figure class="center-figure">
+    <img src="blims_4.png" alt="" />
+    <figcaption>BLiMS connected to the parachute</figcaption>
+</figure>
+
+<h2 id="photos-from-test-launches">Photos from Test Launches</h2>
+
+<figure class="center-figure">
+    <img src="blims_5.png" alt="" />
+    <figcaption>Installing BLiMS into the rocket</figcaption>
+</figure>
+
+<figure class="center-figure">
+    <img src="blims_6.png" alt="" />
+    <figcaption>BLiMS loaded into the airframe</figcaption>
+</figure>
+
+<figure class="center-figure">
+    <img src="blims_7.png" alt="" />
+    <figcaption>Carrying the rocket to the launch pad</figcaption>
+</figure>
+
+<figure class="center-figure">
+    <img src="blims_8.png" alt="" />
+    <figcaption>Rocket on the rail prior to launch</figcaption>
+</figure>
+
+<figure class="center-video">
+    <video controls="" autoplay="" loop="" muted="">
+    <source src="blims_launch_2.mp4" type="video/mp4" />
+    Your browser does not support the HTML5 Video element.
+    </video>
+    <figcaption>Rocket launch</figcaption>
+</figure>
+
+<figure class="center-figure">
+    <img src="blims_9.png" alt="" />
+    <figcaption>L3 Launch #1 GPS Data</figcaption>
+</figure>
+
+<figure class="center-figure">
+    <img src="blims_10.png" alt="" />
+    <figcaption>L3 Launch #2 GPS Data</figcaption>
+</figure>
+
+<h2 id="technical-report">Technical Report</h2>
+
+<p>Below is a detailed technical report I wrote for BLiMS, which dives deeper into the simulation and mechanical/electrical design.</p>
+
+<object data="blims_tech_report.pdf" type="application/pdf" width="500px" height="500px">
+    <embed src="blims_tech_report.pdf" />
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="blims_tech_report.pdf">Download PDF</a>.</p>
+    &lt;/embed&gt;
+</object>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
