@@ -8,6 +8,6 @@ rank: 3
 
 | Doc | Last Updated |
 | -------- | ------- |
-| Maintaining this website  | Jan '25 |
-| Stepper Motors | Jan '25 |
-| Git | Jan '25 |
+| [Maintaining this website](maintaining/maintaining.html)  | March '25 |
+| Stepper Motors | January '25 |
+| Git | January '25 |

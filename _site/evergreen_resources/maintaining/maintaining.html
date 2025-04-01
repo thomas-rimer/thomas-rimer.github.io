@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Maintaining this Website | Thomas Rimer</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Maintaining this Website" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Personal Portfolio" />
+<meta property="og:description" content="Personal Portfolio" />
+<link rel="canonical" href="http://localhost:4000/evergreen_resources/maintaining/maintaining.html" />
+<meta property="og:url" content="http://localhost:4000/evergreen_resources/maintaining/maintaining.html" />
+<meta property="og:site_name" content="Thomas Rimer" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Maintaining this Website" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Personal Portfolio","headline":"Maintaining this Website","url":"http://localhost:4000/evergreen_resources/maintaining/maintaining.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">Thomas Rimer</a></h1>
+
+        
+        
+        <!--
+        
+          <p>Personal Portfolio</p>
+        
+        -->
+
+        <nav class="sidebar">
+    <ul>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/trip_reports">Trip Reports</a></li>
+      <li><a href="/evergreen_resources">Evergreen Resources</a></li>
+    </ul>
+  </nav>
+        
+      </header>
+      <section>
+
+      <h1 id="maintaining-this-website">Maintaining this Website</h1>
+
+<p>A guide for myself on how to maintain and update this website.</p>
+
+<h2 id="adding-a-new-entry">Adding a New Entry</h2>
+
+<ol>
+  <li>Add the entry to main page
+    <ul>
+      <li>Open the catagory markdown page (either projects, trip reports, or evergreen) that corrosponds to the new entry</li>
+      <li>Copy and paste existing entry, edit title and dates</li>
+      <li>Edit hyperlink to <code class="language-plaintext highlighter-rouge">page_title/page_title.html</code> (make sure the name the file type is <code class="language-plaintext highlighter-rouge">.html</code>, not <code class="language-plaintext highlighter-rouge">.md</code>)</li>
+    </ul>
+  </li>
+  <li>Create the entry
+    <ul>
+      <li>Under the folder titled corrosponding to the catagory (either projects, trip reports, or evergreen), create a new folder with the name of the entry</li>
+      <li>Within the new folder, create a markdown page with the same name.</li>
+      <li>For example, BLiMS has <code class="language-plaintext highlighter-rouge">projects/blims/blims.md</code></li>
+    </ul>
+  </li>
+  <li>Set up the page
+    <ol>
+      <li>
+        <p>Add the following header:</p>
+
+        <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p"> ---  </span>
+     layout: default  
+     title: page_title  
+<span class="p"> ---  
+    </span>
+ # page_title  
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+  <li>Edit the page
+    <ul>
+      <li>Generate live preview
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">jekyll serve</code></li>
+          <li>Note this must be run from the <code class="language-plaintext highlighter-rouge">thomas-rimer.github.io</code> directory</li>
+          <li>Navigate to <code class="language-plaintext highlighter-rouge">localhost:4000</code> to view the live preview</li>
+        </ul>
+      </li>
+      <li>All resources related to that page (photos, videos, PDFs, etc…) go within the folder with the related name</li>
+      <li>Hyperlinks relative to the page (to files outside the page’s own direcotry) must be prefixed with ../../ to reach what you see as the base directory. For an example, see the code for the example video on this page.</li>
+    </ul>
+  </li>
+  <li>Push to GitHub. Type the following into the commandline
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">git add .</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git commit -m "added XXX project page"</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git push</code></li>
+      <li>Enter password and hit enter</li>
+      <li>It will upload to GitHub, and should be viewable within a few minutes</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="markdown-syntax">Markdown Syntax</h2>
+
+<h3 id="inserting-special-objects">Inserting Special Objects</h3>
+<p>Drag the file into the folder corrosponding to the page (i.e. <code class="language-plaintext highlighter-rouge">projects/blims</code>). Then rename it to something friendly. Because .md pages are saved in the folder, you can access them simply by their name (i.e. the path to <code class="language-plaintext highlighter-rouge">blim_3.2.png</code> would just be <code class="language-plaintext highlighter-rouge">blims_3.2.png</code>).</p>
+
+<h4 id="images">Images</h4>
+<p><code class="language-plaintext highlighter-rouge">alt</code> is for text that shows up if the image can’t load. See the section below on creating new classes for image customization. Figcaption can be left blank for no caption.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"center-figure"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"blims_2.png"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>Photo of the assembled BLiMS<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div></div>
+
+<figure class="center-figure">
+    <img src="../../projects/blims/blims_3.2.png" alt="" />
+    <figcaption>Example image</figcaption>
+</figure>
+
+<h4 id="videos">Videos</h4>
+<p>Process is pretty much identical to photos. Make sure the video is mp4 format (you can simply rename <code class="language-plaintext highlighter-rouge">.mov</code> to <code class="language-plaintext highlighter-rouge">.mp4</code>). Note <code class="language-plaintext highlighter-rouge">jekyll serve</code> often has issues with videos, but they resolve themselves when pushed to GitHub (or when viewed on Safari). GitHub does not allow large videos, to be safe ensure the video is under 25 MB.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"center-video"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../../projects/blims/blims_launch.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+    Your browser does not support the HTML5 Video element.
+    <span class="nt">&lt;/video&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>Rocket launch<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div></div>
+
+<figure class="center-video">
+    <video controls="" autoplay="" loop="" muted="">
+    <source src="../../projects/blims/blims_launch.mp4" type="video/mp4" />
+    Your browser does not support the HTML5 Video element.
+    </video>
+    <figcaption>Example Video</figcaption>
+</figure>
+
+<h4 id="pdfs">PDFs</h4>
+<p>I found 500x700 fits google doc exports well.</p>
+
+<object data="../../projects/blims/blims_tech_report.pdf" type="application/pdf" width="500px" height="700px">
+    <embed src="../../projects/blims/blims_tech_report.pdf" />
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../projects/blims/blims_tech_report.pdf">Download PDF</a>.</p>
+    &lt;/embed&gt;
+</object>
+
+<h3 id="basic-syntax">Basic Syntax</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Example</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bold text</td>
+      <td><strong>bold text</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">**bold text**</code></td>
+    </tr>
+    <tr>
+      <td>Italic text</td>
+      <td><em>italic text</em></td>
+      <td><code class="language-plaintext highlighter-rouge">*italic text*</code></td>
+    </tr>
+    <tr>
+      <td>Underline text</td>
+      <td><u>underline text</u></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;u&gt;underline text&lt;/u&gt;</code></td>
+    </tr>
+    <tr>
+      <td>Code block</td>
+      <td><code class="language-plaintext highlighter-rouge">code = block()</code></td>
+      <td><code class="language-plaintext highlighter-rouge">```code = block()```</code></td>
+    </tr>
+    <tr>
+      <td>Largest Title</td>
+      <td>-</td>
+      <td><code class="language-plaintext highlighter-rouge">#Largest Title</code></td>
+    </tr>
+    <tr>
+      <td>Medium Title</td>
+      <td>-</td>
+      <td><code class="language-plaintext highlighter-rouge">##Medium Title</code></td>
+    </tr>
+    <tr>
+      <td>Small Title</td>
+      <td>-</td>
+      <td><code class="language-plaintext highlighter-rouge">###Small Title</code></td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>
