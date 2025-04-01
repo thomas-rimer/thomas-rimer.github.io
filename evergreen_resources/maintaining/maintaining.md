@@ -100,6 +100,39 @@ I found 500x700 fits google doc exports well.
 | Italic text | *italic text* | ```*italic text*``` |
 | Underline text | <u>underline text</u> | ```<u>underline text</u>``` |
 | Code block | ```code = block()``` | ```` ```code = block()``` ```` |
+| Hyperlink | [home](../../index.html) | ```[home](../../index.html)``` |
 | Largest Title | - | ```#Largest Title``` |
 | Medium Title | - | ```##Medium Title``` |
 | Small Title | - | ```###Small Title``` |
+| Blank line |  | ```<p>&nbsp;</p>``` |
+
+<p>&nbsp;</p>
+
+## Git Syntax
+[Here](https://education.github.com/git-cheat-sheet-education.pdf) is a helpful PDF from GitHub with git shortcuts.
+
+### Stage and snapshots
+Working with commits and the Git staging area.
+
+| Code | Comment |
+| ------- | ------- | 
+| ```git status``` | Shows whats been modified/added since last commit, for your working directory |
+| ```git add .``` | Stages all modifications for upcoming commit |
+| ```git reset .``` | Removes all files from staging |
+
+### Pushing to GitHub
+Requires internet connection.
+
+| Code | Comment |
+| ------- | ------- | 
+| ```git push``` | Pushes current commit to GitHub |
+| ```git pull``` | Pulls everything from GitHub to computer |
+
+
+## Website File Structure
+- This website uses the Minimal Jekyll theme. The repo can be found [here](https://github.com/pages-themes/minimal) and the live preiew [here](https://pages-themes.github.io/minimal/)
+- The folder ```_site``` contains the "rendered" version of the website. It automatically mirrors the files/code in the main directory (but markdown files are converted to HTML). You should not ever edit anything inside _site
+- README.md is just for something to show up on the GitHub repo page, it doesn't show up anywhere on the websites
+- CNAME is for linking the thomasrimer.com domain
+- ```assets/css/custom.css``` is the file for any custom css you might want to add. Don't mess around with any css files in _site.
+- I created the ```_includes folder```, and its content ```sidebar.html``` to add the three side menu. It gets included into the website using the {% raw %} ```{% include sidebar.html %} ``` {% endraw %} line in ```_layouts/default.html``` file

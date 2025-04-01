@@ -192,6 +192,11 @@
       <td><code class="language-plaintext highlighter-rouge">```code = block()```</code></td>
     </tr>
     <tr>
+      <td>Hyperlink</td>
+      <td><a href="../../index.html">home</a></td>
+      <td><code class="language-plaintext highlighter-rouge">[home](../../index.html)</code></td>
+    </tr>
+    <tr>
       <td>Largest Title</td>
       <td>-</td>
       <td><code class="language-plaintext highlighter-rouge">#Largest Title</code></td>
@@ -206,8 +211,76 @@
       <td>-</td>
       <td><code class="language-plaintext highlighter-rouge">###Small Title</code></td>
     </tr>
+    <tr>
+      <td>Blank line</td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;p&gt;&amp;nbsp;&lt;/p&gt;</code></td>
+    </tr>
   </tbody>
 </table>
+
+<p>&nbsp;</p>
+
+<h2 id="git-syntax">Git Syntax</h2>
+<p><a href="https://education.github.com/git-cheat-sheet-education.pdf">Here</a> is a helpful PDF from GitHub with git shortcuts.</p>
+
+<h3 id="stage-and-snapshots">Stage and snapshots</h3>
+<p>Working with commits and the Git staging area.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">git status</code></td>
+      <td>Shows whats been modified/added since last commit, for your working directory</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">git add .</code></td>
+      <td>Stages all modifications for upcoming commit</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">git reset .</code></td>
+      <td>Removes all files from staging</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pushing-to-github">Pushing to GitHub</h3>
+<p>Requires internet connection.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">git push</code></td>
+      <td>Pushes current commit to GitHub</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">git pull</code></td>
+      <td>Pulls everything from GitHub to computer</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="website-file-structure">Website File Structure</h2>
+<ul>
+  <li>This website uses the Minimal Jekyll theme. The repo can be found <a href="https://github.com/pages-themes/minimal">here</a> and the live preiew <a href="https://pages-themes.github.io/minimal/">here</a></li>
+  <li>The folder <code class="language-plaintext highlighter-rouge">_site</code> contains the “rendered” version of the website. It automatically mirrors the files/code in the main directory (but markdown files are converted to HTML). You should not ever edit anything inside _site</li>
+  <li>README.md is just for something to show up on the GitHub repo page, it doesn’t show up anywhere on the websites</li>
+  <li>CNAME is for linking the thomasrimer.com domain</li>
+  <li><code class="language-plaintext highlighter-rouge">assets/css/custom.css</code> is the file for any custom css you might want to add. Don’t mess around with any css files in _site.</li>
+  <li>I created the <code class="language-plaintext highlighter-rouge">_includes folder</code>, and its content <code class="language-plaintext highlighter-rouge">sidebar.html</code> to add the three side menu. It gets included into the website using the  <code class="language-plaintext highlighter-rouge">{% include sidebar.html %}</code>  line in <code class="language-plaintext highlighter-rouge">_layouts/default.html</code> file</li>
+</ul>
 
 
       </section>
