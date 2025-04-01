@@ -9,5 +9,4 @@ rank: 3
 | Doc | Last Updated |
 | -------- | ------- |
 | [Maintaining this website](maintaining/maintaining.html)  | March '25 |
-| Stepper Motors | January '25 |
-| Git | January '25 |
+| [Stepper Motors](stepper_motors/stepper_motors.html) | March '25 |
