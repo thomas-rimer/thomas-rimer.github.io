@@ -88,8 +88,8 @@ The system came out to a toal cost of ~$500 (not including cost of antenna).
 ## Machining Drawings
 RATS had many machined components, which required 12 seperate drawings for our machinists. All of them have been compiled into the following PDF. 
 
-<object data="rats_complete_drawings.pdf" type="application/pdf" width="500px" height="700px">
-    <embed src="rats_complete_drawings.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="rats_complete_drawings.pdf">Download PDF</a>.</p>
+<object data="rats_drawings.pdf" type="application/pdf" width="500px" height="700px">
+    <embed src="rats_drawings.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="rats_drawings.pdf">Download PDF</a>.</p>
     </embed>
 </object>
