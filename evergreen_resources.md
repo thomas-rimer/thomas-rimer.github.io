@@ -8,5 +8,5 @@ rank: 3
 
 | Doc | Last Updated |
 | -------- | ------- |
-| [Maintaining this website](maintaining/maintaining.html)  | March '25 |
-| [Stepper Motors](stepper_motors/stepper_motors.html) | March '25 |
+| [Maintaining this website](/evergreen_resources/maintaining/maintaining.html)  | March '25 |
+| [Stepper Motors](/evergreen_resources/stepper_motors/stepper_motors.html) | March '25 |
