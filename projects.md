@@ -21,5 +21,5 @@ rank: 1
 | Small Projects    |  |
 | -------- | ------- |
 | Characterizing Laser Speckle | Spring '25 |
-| Rocket Antenna Tracking System (RATS) | November '24 |
+| [Rocket Antenna Tracking System (RATS)](/projects/rats/rats.html) | November '24 |
 | Stacking Graphene/BN | June '23 |
