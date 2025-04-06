@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Trail Running Chamonix
+title: Tahiti Spines
 ---
 
-# Trail Running Chamonix (April '23) 
+# Tahiti Spines (April '23) 
 
 <figure class="center-figure-big">
     <img src="tahiti_9.png" alt="Tahiti spine hero shot">
