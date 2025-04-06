@@ -20,3 +20,15 @@
     height: auto;
     display: inline-block;
 }
+
+.center-figure-big {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.center-figure-big img {
+    max-width: 95%;
+    height: auto;
+}
