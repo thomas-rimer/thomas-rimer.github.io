@@ -11,7 +11,7 @@ rank: 2
 | -------- | ------- |
 | [Trail Running Chamonix](/trip_reports/chamonix/chamonix.html) | October '24 |
 | [Trail Running Dolomites](/trip_reports/dolomites/dolomites.html) | June '23 |
-| Muir Woods 50k | May '23 |
+| [Muir Woods 50k](/trip_reports/muir_woods_50k/muir_woods_50k.html) | May '23 |
 | [Tahiti Spines](/trip_reports/tahiti_spines/tahiti_spines.html) | April '23 |
 | Point Reyes 50k | November '21 |
 
