@@ -55,6 +55,11 @@ Detailed descriptions for how the system works are availible in the Technical Re
     <figcaption>BLiMS connected to the parachute</figcaption>
 </figure>
 
+<figure class="center-figure">
+    <img src="blims_10.png" alt="">
+    <figcaption></figcaption>
+</figure>
+
 ## Photos from Test Launches
 
 <figure class="center-figure">
