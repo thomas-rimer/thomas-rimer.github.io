@@ -8,8 +8,9 @@ rank: 1
 
 | Big Projects    |  |
 | -------- | ------- |
+| [EUV/VUV Plasma Discharge Source Characterization for Semiconductor Metrology](/projects/kla/kla.html) | Summer '25 |
 | [Rocket Parachute Guidance System "BLiMS"](/projects/blims/blims.html) | Mar '24 - Jun '25 |
-| [Air Sampling Rocket Payload](/projects/payload_2025/payload_2025.html) | May '24 - Jun '25 |
+| [Atmsospheric Dust Morphology Characterization](/projects/payload_2025/payload_2025.html) | May '24 - Jun '25 |
 | Femtogram Metal Contaminant Detection with Vapor Phase Decomposition | Summer '24 |
 | Smart Camera Network for Nanofab Automation| Summer '24 |
 | Laser Light Scattering Caused by Fat Globules in Milk | August '22 - February '23 |

@@ -10,17 +10,21 @@ title: BLiMS
     <figcaption></figcaption>
 </figure>
 
-BLiMS, the **B**rake **Li**ne **M**anipulation **S**ystem, is a parachute guidance system developed for the Cornell Rocketry Team's 2025 rocket. By pulling on the brakelines of a square parafoil, BLiMS navigates the team's 19 foot long, 150 lb rocket to a GPS waypoint as it a descends from a 10,000' apogee.
+BLiMS, the **B**rake **Li**ne **M**anipulation **S**ystem, is a parachute guidance system I designed and built for the Cornell Rocketry Team's 2025 rocket. By pulling on the brakelines of a rectangular parafoil, BLiMS navigates the team's 19 foot long, 150 lb rocket to a GPS waypoint as it a descends from a 10,000' apogee.
+
+BLiMS has flown 4 times on two different high-powered rocket platforms. The most succesful flight saw BLiMS perform succesful left and right banks at a variety of angles from a launch of ~5,000 ft. BLiMS has 2 more characterization flights planned for early 2026, before final installation in our competition rocket for the 2026 Spaceport America Cup.
 
 ## System Overview
 
 *A detailed, 50-page technical report is availible at the bottom of this page going into every aspect of the design and validation of BLiMS. I recommend checking that out for further insight into the project.*
 
-BLiMS is basically a miniature skydiver. Onboard, it has a single high-power BLDC motor connected to a pair of counter-rotating spools to extend and retract the brakelines of our rocket's square parafoil. When the brakelines are pulled, the shape of parafoil changes allowing for left and right turns. An onboard PID controller uses GPS and altimiter data to guide the rocket to a predetermined landing point. Given the weight of the rocket and extreme deceleration during parachute inflation, BLiMS was deisgned to withstand **>4,500 lbs** of loading while still retaining complete control over the parachute. 
+BLiMS is basically a miniature skydiver. Onboard, it has a single high-power BLDC motor connected to a pair of counter-rotating spools to extend and retract the brakelines of our rocket's rectangular parafoil. When the brakelines are pulled, the shape of parafoil changes allowing for left and right turns. An onboard PID controller uses GPS and altimiter data to guide the rocket to a predetermined landing point. Given the weight of the rocket and extreme deceleration during parachute inflation, BLiMS was deisgned to withstand **>4,500 lbs** of loading while still retaining complete control over the parachute. 
 
 I designed the entire mechanical system, as well as simuluated and selected the motors, motor drivers, and battery systems. Other members of CRT wrote the firmware, controller, and machined the actual components.
 
-BLiMS was designed in the spring and summer of 2024. It was revised that fall, after which it was manufactured and assembled. It flew succesfully for the first time in January 2025. A second validation flight was launched in March of 2025, after which it was handed over to the software team for guidance control. Its official (and final) flight took place at IREC 2025 in Texas, where it succesfully returned our rocket to the designated landing point. Photos and videos of BLiMS working are below. 
+BLiMS was designed in the spring and summer of 2024. It was revised that fall, after which it was manufactured and assembled. It flew succesfully for the first time in January 2025 on our L3 test platform (developed by former member Sam Noles). A second validation flight was launched in March of 2025, where we succesfully turned the rocket several times allowing us to tune the controller. Two additional flights on our competition launch vehicle took place in Penn Yann, NY (April '25) and Midland, TX (June '25) where a new parachute deployment system was tested and refined. Photos and videos of BLiMS working are below. 
+
+At least 4 more flights are planned for BLiMS in 2026.
 
 ## Mechanical
 
@@ -30,6 +34,7 @@ BLiMS uses the following components:
 - Motor Encoder: 16384 CPR Absolute RS485 Encoder (AMT212B-V-OD)
 - Batteries: 9x 18650 Molicel P28A Li-Ion Cells
 - Gearing: 10:1 Worm Gear and Worm
+- Parachute: Firebird Rush 110 Reserve Parachute
 
 Detailed descriptions for how the system works are availible in the Technical Report at the end. The system were designed in CAD (Fusion360 and Solidworks), simulated and verified with Ansys, manufactured on a mix of manual and CNC mills, and tested on several high powered sounding rockets. 
 
