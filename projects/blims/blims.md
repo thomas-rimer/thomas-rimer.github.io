@@ -12,7 +12,7 @@ title: BLiMS
 
 BLiMS, the **B**rake **Li**ne **M**anipulation **S**ystem, is a parachute guidance system I designed and built for the Cornell Rocketry Team's 2025 rocket. By pulling on the brakelines of a rectangular parafoil, BLiMS navigates the team's 19 foot long, 150 lb rocket to a GPS waypoint as it a descends from a 10,000' apogee.
 
-BLiMS has flown 4 times on two different high-powered rocket platforms. The most succesful flight saw BLiMS perform succesful left and right banks at a variety of angles from a launch of ~5,000 ft. BLiMS has 2 more characterization flights planned for early 2026, before final installation in our competition rocket for the 2026 Spaceport America Cup.
+BLiMS has flown 4 times on two different high-powered rocket platforms (2x on our competition rocket, 2x on an L3 rocket created by former CRT member Sam Noles). The most succesful flight saw BLiMS perform succesful left and right banks at a variety of angles from a launch of ~5,000 ft. BLiMS has 2 more characterization flights planned for early 2026, before final installation in our competition rocket for the 2026 Spaceport America Cup.
 
 ## System Overview
 

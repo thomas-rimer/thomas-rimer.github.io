@@ -3,11 +3,11 @@ layout: default
 title: KLA
 ---
 
-# EUV/VUV Plasma Discharge Source Characterization for Semiconductor Metrology
+# EUV/VUV Plasma Source Characterization for Silicon Wafer Inspection (KLA)
 
-<figure class="center-figure">
+<figure class="center-figure-medium">
     <img src="kla_1.jpg" alt="Discharge plasma">
-    <figcaption>Discharge plasma at Fraunhofer ILT</figcaption>
+    <figcaption>Photograph of the discharge plasma I characterized (    Fraunhofer ILT)</figcaption>
 </figure>
 
 During summer '25, I worked at [KLA](https://www.kla.com/) on the broadband plasma (BBP) team under Larissa Juschkin. Throughout the summer I designed, manfuactured, and assembled two plasma characterization tools to measure the timing and emission of EUV/VUV discharge plasmas.
@@ -37,12 +37,13 @@ I personally managed manfacturing of the components at local machine shops, work
     <figcaption>Local machine shop's 5 axis CNC mill</figcaption>
 </figure>
 
-## Operation
-I worked in Aachen, Germany (southern end of the border between Germany and the Netherlands) for two weeks, installing and then operating the devices over the course of a two week measurement campaign with one other KLA colleague. I took thousands of measurements with both devices, which operated perfectly throughout the entire campaign. I also assisted in operating several other optical, irradiance, and electrical characterization tools also mounted on the plasma source.
+## Installation and Operation
+
+I worked in Aachen, Germany (southern end of the border between Germany and the Netherlands) for two weeks, installing and then operating the devices with one other KLA colleague. I took thousands of measurements with both devices, which operated as expected throughout the entire campaign. I also setup and ran several other spectral, optical, irradiance, and electrical characterization tools also mounted on the plasma source.
 
 ## Transportation
 
-I was working at KLA in California. However, the discharge source of interest was located in Germany. This meant we had to cross a continent and an ocean with all the equipment and tools needed for several weeks of cleanroom work in a plasma physica laboratory. 
+I was working at KLA in California. However, the discharge source of interest was located in Germany. This meant we had to cross a continent and an ocean with all the equipment and tools needed for several weeks of cleanroom work in a plasma physics laboratory. 
 
 I  managed the entire packing and transportation of all equipment and supporting tools between California and Germany. This included custom shipping hardware to prevent damage during transportation, working directly with TSA to approve on-flight transportation, and meeting with German lab managers ahead of time to come up with imperial-to-metric workarounds for certain equipment. 
 
