@@ -9,5 +9,5 @@ I love ultra running, cycling, skiing, and paddleboarding.
 
 <figure class="center-figure-medium">
     <img src="/projects/blims/blims_7_cropped.jpg" alt="">
-    <figcaption>On my way to the launchpad to test my parachute guidance system in a 12' L3 sounding rocket</figcaption>
+    <figcaption>On my way to the launchpad to test my parachute guidance system in an L3 sounding rocket</figcaption>
 </figure>
