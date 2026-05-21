@@ -10,12 +10,15 @@ title: Trail Running Dolomites
     <figcaption></figcaption>
 </figure>
 
+## Trip Overview
+Midway through a vacation through central Europe, I stopped through the Dolomites. I spent one of our days in the mountain running the valleys. It ended up being one of the—if not the best—runs of my life. 
+
 ## Getting There
 Flew into Munich. Spent several days in Germany before driving through Innsbruck to the Dolomites. Stayed at the Dorfhotel Beludei.
 
 ## The Run
 
-Walked from the hotel down to the valley floor. Took two successive chairlifts back up the other side of the valley (purchase tickets at the bottom of the first when I showed up in the morning). Started my run from the top of the second chairlift. 
+I started the day at our hotel (the Dorfhotel Beludei) which is about a mile up the opposite valley wall. I walked from the hotel down to the valley floor. To jumpstart the day, I took two successive chairlifts back up the other side of the valley (purchased tickets at the bottom of the first when I showed up in the morning). Started my run from the top of the second chairlift. 
 
 The first ~5 miles I skirted around the eastern base of the large rock towers. At mile 5.4, I stopped at Rifugio Sandro Pertini for water, before heading turning back.
 

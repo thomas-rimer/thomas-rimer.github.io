@@ -23,12 +23,12 @@ Optical wavelengths (400-750 nm) are far too big to measure transistor defects. 
 ### Discharge Plasmas
 Dishcarge plasmas rely on high capacitance, ultra-low-inductance capacitors to form sparks (strands of hot plasma) in an pure gas enviornment. This conductive arc allows additional current to flow, which itself generates a magnetic field that compresses the plasma, further heating it up (z-pinch). The result is an extremly hot (200,000K) plasma whose radiation includes substial EUV (13.5 nm) and VUV (100-200 nm). 
 
-While technologically quite simple, discharge sources suffer from the proximity of ultra-hot plasmas to their electrodes (which results in accelerated degradation of plasma shape and EUV/VUV yield). My work was concerned with characterizing an existing 
+While technologically quite simple, discharge sources suffer from the proximity of ultra-hot plasmas to their electrodes (which results in accelerated degradation of plasma shape and EUV/VUV yield). My work was concerned with characterizing an existing discharge source.
 
-## Technical Details
+## My Project's Technical Details
 I designed, manufactured, and installed two plasma characterization tools, each roughly the size of a fist. 
 
-Both systems went through multiple design cycles with mechanical engineers, research scientists, and plasma physicists to ensure they would perform in the harsh EUV/VUV environment. Both devices contained several metal machined, optical, sintered ceramic, electrical, and 3D printed components. I also made my own high-voltage power supplies for the internal electronics.
+Both systems went through design cycles with mechanical engineers, research scientists, and plasma physicists to ensure they would perform in the EUV/VUV environment. Both devices contained several metal machined, optical, sintered ceramic, electrical, and 3D printed components. I also made my own high-voltage power electronics. 
 
 I personally managed manfacturing of the components at local machine shops, working directly with machinists on the shop floor to tweak device parameters to hit the extremly rapid turn-around-time of the project.
 
