@@ -16,7 +16,7 @@ I redesigned the proton accelerator used at PSI (a muon research facility in Swi
 In spring of 2026, Himani Mishra and I took David Hammer's "Intro to Controlled Fusion" (ECE 4840) course at Cornell, which introduces the physics and basic architectures for fusion energy reactors. Rather than present on an existing company (as the project guidlines said we should), Himani and I decided to produce our own, new work for our final project. Himani used Geant4 (particle transport simulation toolkit developed by CERN) to model muon catalyzed dueterium-tritium reactions, and I redesigned the proton accelerator used at PSI (muon research facility in Switzerland) for muon catalyzed fusion.
 
 <figure class="center-figure">
-    <img src="t1_img.png" alt="Accelerator full render">
+    <img src="T1_img.png" alt="Accelerator full render">
     <figcaption>Top down view of complete assembly</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ The proposed muon source begins with a small, microwave-based proton source insi
 ### Cockcroft-Walton Accelerator
 
 <figure class="center-figure-medium">
-    <img src="t2_img.png" alt="CW render">
+    <img src="T2_img.png" alt="CW render">
     <figcaption></figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ Closeup of the Cockcroft-Walton pre-accelerator. The system is 10 meters wide, 9
 ### Injector Cyclotron
 
 <figure class="center-figure-medium">
-    <img src="t3_img.png" alt="Injector render">
+    <img src="T3_img.png" alt="Injector render">
     <figcaption></figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Closeup of the injector cyclotron. Protons enter (from the Cockcroft-Walton) via
 ### Transfer Beamline
 
 <figure class="center-figure-medium">
-    <img src="t4_img.png" alt="Beamline render">
+    <img src="T4_img.png" alt="Beamline render">
     <figcaption></figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ The small blue boxes are pairs of quadrapolar magnets, which compress the beam h
 ### Primary Cyclotron
 
 <figure class="center-figure-medium">
-    <img src="t5_img.png" alt="Primary cyclotron render">
+    <img src="T5_img.png" alt="Primary cyclotron render">
     <figcaption></figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ Closeup of the primary accelerator. Protons enter via the red and silver tube (l
 ### Target
 
 <figure class="center-figure-medium">
-    <img src="t6_img.png" alt="Target render">
+    <img src="T6_img.png" alt="Target render">
     <figcaption></figcaption>
 </figure>
 
