@@ -9,6 +9,7 @@ rank: 2
 
 | Running    | Date |
 | -------- | ------- |
+| Lake Aloha Loop | May '26 |
 | [Trail Running Chamonix](/trip_reports/chamonix/chamonix.html) | October '24 |
 | [Trail Running Dolomites](/trip_reports/dolomites/dolomites.html) | June '23 |
 | [Muir Woods 50k](/trip_reports/muir_woods_50k/muir_woods_50k.html) | May '23 |
@@ -25,10 +26,10 @@ rank: 2
 
 | Other    | Date |
 | -------- | ------- |
-| Fastpacking New Zealand | December '25 |
+| Hiking New Zealand's South Island | December '25 |
 | Backpacking Hetch Hetchy | June '24 |
 | Helicopter Skydiving in the Swiss Alps | June '23 |
 | Fallen Leaf 50k Paddleboard | September '22 |
-| Alaska Glacier Mountaineer | July '21 |
+| Alaska Glacier Mountaineering | July '21 |
 | Snowmass 12k in 12h Skinning | February '21 |
 | Markley Hut Trip | February '21 |

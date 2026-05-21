@@ -8,7 +8,7 @@ title: Redesigning the Proton Accelerator at PSI for Muon Catalyzed Fusion
 I redesigned the proton accelerator used at PSI (a muon research facility in Switzerland) to generate negative muons which can be used for muon catalyzed fusion to produce energy.
 
 <figure class="center-figure-medium">
-    <img src="t7_img.png" alt="Accelerator full render">
+    <img src="T7_img.png" alt="Accelerator full render">
     <figcaption>Complete assembly of all subsystems of my design</figcaption>
 </figure>
 
